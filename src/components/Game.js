@@ -43,22 +43,22 @@ function Game() {
       if(!userChoice || !cpuChoice){
           return STATES.INIT
       }
-      if (userChoice === "Rock" && cpuChoice === "Scissors") {
+      if (userChoice === "Rock" && cpuChoice === "Scissor") {
           return STATES.WIN;
       }
       if (userChoice === "Rock" && cpuChoice === "Paper") {
           return STATES.LOSE;
       }
-      if (userChoice === "Scissors" && cpuChoice === "Paper") {
+      if (userChoice === "Scissor" && cpuChoice === "Paper") {
           return STATES.WIN;
       }
-      if (userChoice === "Scissors" && cpuChoice === "Rock") {
+      if (userChoice === "Scissor" && cpuChoice === "Rock") {
           return STATES.LOSE;
       }
       if (userChoice === "Paper" && cpuChoice === "Rock") {
           return STATES.WIN;
       }
-      if (userChoice === "Paper" && cpuChoice === "Scissors") {
+      if (userChoice === "Paper" && cpuChoice === "Scissor") {
           return STATES.LOSE;
       }
 
